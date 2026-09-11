@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaWhatsapp, FaLinkedin, FaFacebook} from "react-icons/fa6";
+import { FaWhatsapp, FaLinkedin, FaFacebook, FaInstagram} from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 import { MdOutlineMarkEmailRead, MdOutlineChevronRight } from "react-icons/md";
 import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
@@ -33,6 +33,7 @@ function Footer() {
                             <FaFacebook size={20} />
                             <BsTwitterX size={20} />
                             <FaLinkedin size={20} />
+                             <FaInstagram size={20} />
                         </div>
                     </div>
 
