@@ -25,6 +25,12 @@ button:focus-visible {
 } */
 
 /* Hide scrollbar for IE, Edge and Firefox */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 html {
   -ms-overflow-style: none !important;  /* IE and Edge */
   scrollbar-width: none !important;  /* Firefox */

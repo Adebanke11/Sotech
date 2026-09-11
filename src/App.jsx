@@ -14,7 +14,8 @@ import CaseStudies from './CaseStudies';
 
 function App() {
   return (
-    <Router>
+  
+      <Router basename="/Sotech">
       <ScrollToTop />
       <div className='App-Wrapper' style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         {/* Navbar stays at the top of every page */}
