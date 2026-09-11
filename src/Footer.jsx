@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaWhatsapp, FaLinkedin, FaFacebook, FaInstagram} from "react-icons/fa6";
-import { BsTwitterX } from "react-icons/bs";
+import { FaWhatsapp, FaLinkedin, FaFacebook, FaInstagram, FaTiktok} from "react-icons/fa6";
+// import { BsTwitterX } from "react-icons/bs";
 import { MdOutlineMarkEmailRead, MdOutlineChevronRight } from "react-icons/md";
 import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
 import { HashLink } from 'react-router-hash-link';
@@ -30,10 +30,13 @@ function Footer() {
                             Providing cutting-edge IT infrastructure, software delivery, and tech support for schools and corporate organizations.
                         </p>
                         <div className="d-flex gap-3 mt-3">
-                            <FaFacebook size={20} />
-                            <BsTwitterX size={20} />
-                            <FaLinkedin size={20} />
-                             <FaInstagram size={20} />
+                           <a href="https://www.facebook.com/share/1ECmfU5cbs/?mibextid=wwXIfr" > <FaFacebook size={20} /> </a>
+                            {/* <BsTwitterX size={20} /> */}
+                            <a href="https://www.linkedin.com/in/aina-sodiq-309214154?utm_source=share_via&utm_content=profile&utm_medium=member_android" > <FaLinkedin size={20} /> </a>
+                             <a href="https://www.instagram.com/sotech_it_solutions?stkn=YXBoM2N4NW9vMmZ4" > <FaInstagram size={20} /> </a>
+                              <a href="https://www.tiktok.com/@sotech50?_r=1&_t=ZS-99eBgvFoUHy" ><FaTiktok size={20} /> </a>
+                             
+                             
                         </div>
                     </div>
 
