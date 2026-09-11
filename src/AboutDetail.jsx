@@ -29,7 +29,7 @@ function AboutDetail() {
                     <div className="col-lg-6 mb-4">
                         <h2 style={{ fontWeight: 'bold', color: '#0d0e11' }}>Our Mission</h2>
                         <p style={{ lineHeight: '1.8', fontSize: '17px', color: '#555' }}>
-                            SoTech was founded in Lagos with a single goal: to provide world-class IT solutions that are accessible and reliable. We noticed businesses struggling with slow software and failing hardware, so we built a team of experts dedicated to <strong>AI Automation</strong> and <strong>Precision Engineering</strong>.
+                            SoTech was founded in Ikeja, Lagos with a single goal: to provide world-class IT solutions that are accessible and reliable. We noticed businesses struggling with slow software and failing hardware, so we built a team of experts dedicated to <strong>AI Automation</strong> and <strong>Precision Engineering</strong>.
                         </p>
                         <p style={{ lineHeight: '1.8', fontSize: '17px', color: '#555' }}>
                             Today, we serve schools, corporate offices, and individuals, ensuring their digital momentum never stops.

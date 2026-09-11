@@ -94,11 +94,11 @@ function Navbar(){
           <div className="d-none d-lg-block" style={{ marginTop:'20px'}}>
             <ul style={{display:'flex', justifyContent:'center', listStyle:'none', gap:'15px'}}>
               <li className="text-white service-transition"><Link className="nav-link2" to="/book-service" style={{textDecoration:'none'}}>Book a Service</Link></li>
-              <li className="text-white"><a  href="#" style={{textDecoration:'none', color:'#0f172a'}}><LuFacebook size={24}/></a></li>
-              <li className="text-white"><a  href="#" style={{textDecoration:'none', color:'#0f172a'}}><FaLinkedin size={24}/></a></li>
+              {/* <li className="text-white"><a  href="#" style={{textDecoration:'none', color:'#0f172a'}}><LuFacebook size={24}/></a></li> */}
+              {/* <li className="text-white"><a  href="#" style={{textDecoration:'none', color:'#0f172a'}}><FaLinkedin size={24}/></a></li>
               <li className="text-white"><a  href="#" style={{textDecoration:'none', color:'#0f172a'}}><BsTwitterX size={24}/></a></li>
-            </ul>
-            
+            */}
+            </ul> 
           </div>
           </div>
         </div>
