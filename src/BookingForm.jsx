@@ -5,6 +5,7 @@ function BookingForm() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
+        phone: '',
         service: 'Hardware Repair',
         message: ''
     });
@@ -47,7 +48,7 @@ ReactGA.event({
   action: "Submit_Booking_Form",
   label: formData.service,
 });
-            setFormData({ name: '', email: '', service: 'Hardware Repair', message: '' });
+            setFormData({ name: '', email: '', phone: '', service: 'Hardware Repair', message: '' });
         } catch (err) {
             console.error('Error submitting form:', err);
             setStatus({ submitting: false, submitted: false, error: true });
@@ -107,6 +108,20 @@ ReactGA.event({
                         />
                     </div>
 
+                     <div className="mb-3">
+                        <label className="form-label" style={{ fontWeight: '600' }}>Phone Number (Preferably whatsapp) </label>
+                        <input 
+                            type="tel" 
+                            name="phone" 
+                            className="form-control" 
+                            placeholder="+234 800 000 0000" 
+                            required 
+                            value={formData.phone}
+                            onChange={handleChange}
+                            style={{ borderRadius: '10px', padding: '12px' }} 
+                        />
+                    </div>
+
                     <div className="mb-3">
                         <label className="form-label" style={{ fontWeight: '600' }}>Service Required</label>
                         <select 
@@ -120,6 +135,7 @@ ReactGA.event({
                             <option value="AI Automation">AI Automation</option>
                             <option value="Software Development">Software Development</option>
                             <option value="IT Support">General IT Support</option>
+                            <option value="Others">Instructor-led Training</option>
                             <option value="Others">Others</option>
                         </select>
                     </div>

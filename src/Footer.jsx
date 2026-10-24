@@ -36,7 +36,7 @@ function Footer() {
                              <a href="https://www.instagram.com/sotech_it_solutions?stkn=YXBoM2N4NW9vMmZ4" style={{ color: '#bdc3c7', textDecoration: 'none' }}> <FaInstagram size={20} /> </a>
                               <a href="https://www.tiktok.com/@sotech50?_r=1&_t=ZS-99eBgvFoUHy" style={{ color: '#bdc3c7', textDecoration: 'none' }}><FaTiktok size={20} /> </a>
                              
-                             
+                            
                         </div>
                     </div>
 
