@@ -15,7 +15,8 @@ import CaseStudies from './CaseStudies';
 function App() {
   return (
   
-      <Router basename="/Sotech">
+      // <Router basename="/Sotech">- for github pages
+      <BrowserRouter>
       <ScrollToTop />
       <div className='App-Wrapper' style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         {/* Navbar stays at the top of every page */}
@@ -41,7 +42,7 @@ function App() {
         {/* Footer stays at the bottom of every page */}
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
