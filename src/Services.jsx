@@ -1,5 +1,5 @@
 
-import image from './assets/Sotech.jpg';
+import image from './assets/sotech.jpg';
 
 
 function Services(){
