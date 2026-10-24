@@ -32,7 +32,7 @@ function Footer() {
                         <div className="d-flex gap-3 mt-3">
                            <a href="https://www.facebook.com/share/1ECmfU5cbs/?mibextid=wwXIfr" style={{ color: '#bdc3c7', textDecoration: 'none' }}> <FaFacebook size={20} /> </a>
                             {/* <BsTwitterX size={20} /> */}
-                            <a href="https://www.linkedin.com/in/aina-sodiq-309214154?utm_source=share_via&utm_content=profile&utm_medium=member_android" style={{ color: '#bdc3c7', textDecoration: 'none' }}> <FaLinkedin size={20} /> </a>
+                            <a href="https://www.linkedin.com/company/sotech-it-solutions/services/request-proposal" style={{ color: '#bdc3c7', textDecoration: 'none' }}> <FaLinkedin size={20} /> </a>
                              <a href="https://www.instagram.com/sotech_it_solutions?stkn=YXBoM2N4NW9vMmZ4" style={{ color: '#bdc3c7', textDecoration: 'none' }}> <FaInstagram size={20} /> </a>
                               <a href="https://www.tiktok.com/@sotech50?_r=1&_t=ZS-99eBgvFoUHy" style={{ color: '#bdc3c7', textDecoration: 'none' }}><FaTiktok size={20} /> </a>
                              

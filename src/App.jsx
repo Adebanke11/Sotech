@@ -51,6 +51,7 @@
 
 
 import { Routes, Route } from 'react-router-dom';
+import ReactGA from 'react-ga4';
 import ScrollToTop from './ScrollToTop';
 import Theapp from './home';
 import PrivacyPolicy from './PrivacyPolicy';
