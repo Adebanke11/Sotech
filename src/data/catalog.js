@@ -1,0 +1,188 @@
+// CENTRAL CATALOG. To add a product: put its photo at assets/images/products/<folder>/<slug>.jpg,
+// run `npm run images:upload`, then add one line to the right `items` array below.
+// No prices by design. Image source/licence are recorded in scripts/image-sources.csv.
+const item = (slug, name, desc) => ({ slug, name, desc });
+
+export const PRODUCT_CATEGORIES = [
+  { slug: 'laptops-computers', name: 'Laptops & Computers', folder: 'laptops',
+    intro: 'Brand-new and quality UK-used laptops and desktop computers for students, offices and businesses.',
+    seo: { title: 'Laptops & Computers for Sale in Lagos | New & UK-Used', desc: 'Shop new and quality UK-used laptops and desktop computers at SoTech IT Solutions, Mile 12, Lagos. Visit our store or send an enquiry.' },
+    items: [
+      item('new-laptops', 'New Laptops', 'Brand-new laptops for work, school and business.'),
+      item('uk-used-laptops', 'UK-Used Laptops', 'Quality tested UK-used laptops.'),
+      item('desktop-computers', 'Desktop Computers', 'Desktop systems for homes, offices and labs.'),
+      item('all-in-one-pcs', 'All-in-One PCs', 'Space-saving computers with built-in screens.'),
+      item('business-laptops', 'Business Laptops', 'Reliable machines for professionals.'),
+      item('student-laptops', 'Student Laptops', 'Practical laptops for learning.'),
+    ] },
+  { slug: 'phones-mobile-accessories', name: 'Phones & Mobile Accessories', folder: 'smartphones',
+    intro: 'New and quality UK-used smartphones, plus protective and charging accessories.',
+    seo: { title: 'Phones & Phone Accessories in Lagos', desc: 'New and UK-used smartphones, phone chargers, batteries, screen protectors and cases at SoTech IT Solutions, Mile 12, Lagos.' },
+    items: [
+      item('new-smartphones', 'New Smartphones', 'Brand-new mobile phones.'),
+      item('uk-used-phones', 'UK-Used Phones', 'Quality UK-used smartphones.'),
+      item('phone-chargers', 'Phone Chargers', 'Wall chargers and fast chargers.'),
+      item('phone-batteries', 'Phone Batteries', 'Replacement batteries for phones.'),
+      item('phone-screen-protectors', 'Phone Screen Protectors', 'Tempered glass and film protection.'),
+      item('phone-cases', 'Phone Protective Accessories', 'Cases and covers.'),
+    ] },
+  { slug: 'computer-accessories', name: 'Computer Accessories', folder: 'accessories',
+    intro: 'Everyday computer accessories and laptop spares.',
+    seo: { title: 'Computer & Laptop Accessories in Lagos', desc: 'Keyboards, mice, laptop chargers, batteries, screens and more at SoTech IT Solutions, Mile 12, Lagos.' },
+    items: [
+      item('keyboards', 'Keyboards', 'Wired and wireless keyboards.'),
+      item('mice', 'Wired & Wireless Mice', 'Comfortable everyday mice.'),
+      item('mouse-pads', 'Mouse Pads', 'Smooth, durable mouse pads.'),
+      item('laptop-chargers', 'Laptop Chargers & Adapters', 'Power adapters for popular laptop types.'),
+      item('laptop-batteries', 'Laptop Batteries', 'Replacement laptop batteries.'),
+      item('laptop-screens', 'Laptop Replacement Screens', 'Replacement display panels.'),
+    ] },
+  { slug: 'cables-connectivity', name: 'Cables & Connectivity', folder: 'cables',
+    intro: 'Cables and connectors for displays, storage, power and networks.',
+    seo: { title: 'HDMI, VGA, SATA & Ethernet Cables in Lagos', desc: 'HDMI, VGA, SATA, power and Ethernet cables available at SoTech IT Solutions, Mile 12, Lagos.' },
+    items: [
+      item('hdmi-cables', 'HDMI Cables', 'Digital video and audio cables.'),
+      item('vga-cables', 'VGA Cables', 'Analogue display cables.'),
+      item('sata-cables', 'SATA Cables', 'Data cables for drives.'),
+      item('power-cables', 'Power Cables', 'Computer and device power cables.'),
+      item('ethernet-cables', 'Ethernet Cables', 'Network cables for wired connections.'),
+      item('usb-cables', 'USB & Other Cables', 'Everyday USB and electronic cables.'),
+    ] },
+  { slug: 'storage-hardware', name: 'Storage & Hardware', folder: 'ssd',
+    intro: 'Drives, memory, enclosures and internal components.',
+    seo: { title: 'SSD, Hard Drives, RAM & Flash Drives in Lagos', desc: 'SSDs, internal and external hard drives, flash drives, RAM and enclosures at SoTech IT Solutions, Mile 12, Lagos.' },
+    items: [
+      item('ssd', 'SSDs (Solid State Drives)', 'Faster storage for laptops and desktops.'),
+      item('internal-hard-drives', 'Internal Hard Drives', 'Storage for computers.'),
+      item('external-hard-drives', 'External Hard Drives', 'Portable backup storage.'),
+      item('flash-drives', 'Flash Drives', 'Portable USB storage.'),
+      item('ram', 'RAM & Memory', 'Memory modules for upgrades.'),
+      item('drive-enclosures', 'HDD & SSD Enclosures', 'Turn internal drives into portable ones.'),
+    ] },
+  { slug: 'power-charging', name: 'Power & Charging Accessories', folder: 'power-banks',
+    intro: 'Power banks, adapters and charging accessories.',
+    seo: { title: 'Power Banks & Charging Accessories in Lagos', desc: 'Power banks, ITEL power products, chargers and adapters at SoTech IT Solutions, Mile 12, Lagos.' },
+    items: [
+      item('power-banks', 'Power Banks', 'Portable power for phones and gadgets.'),
+      item('itel-power', 'ITEL Power Products', 'ITEL power and charging products.'),
+      item('power-adapters', 'Power Adapters', 'Adapters for devices and laptops.'),
+      item('charging-cables', 'Charging Cables', 'Cables for phones and gadgets.'),
+      item('charging-accessories', 'Charging Accessories', 'Extra charging essentials.'),
+      item('electronic-gadgets', 'Other Electronic Gadgets', 'Useful everyday electronics.'),
+    ] },
+  { slug: 'audio-gaming', name: 'Audio & Gaming Accessories', folder: 'earbuds',
+    intro: 'Earphones, headsets, speakers and gaming accessories.',
+    seo: { title: 'Earbuds, Headsets, Speakers & Gamepads in Lagos', desc: 'Wireless earbuds, headphones, Bluetooth speakers and gamepads at SoTech IT Solutions, Mile 12, Lagos.' },
+    items: [
+      item('wireless-earbuds', 'Wireless Earbuds', 'Bluetooth earbuds.'),
+      item('wired-earphones', 'Wired Earphones', 'Simple wired earphones.'),
+      item('headsets', 'Headsets', 'Headsets for calls, classes and gaming.'),
+      item('headphones', 'Headphones', 'Over-ear and on-ear headphones.'),
+      item('bluetooth-speakers', 'Bluetooth Speakers', 'Portable wireless speakers.'),
+      item('gamepads', 'Gamepads & Controllers', 'Game controllers and accessories.'),
+    ] },
+  { slug: 'cctv-security', name: 'CCTV & Security Equipment', folder: 'cctv',
+    intro: 'Ultra HD CCTV cameras, recording systems and accessories.',
+    seo: { title: 'CCTV Cameras & Security Equipment in Lagos', desc: 'Ultra HD CCTV cameras, camera systems and accessories from SoTech IT Solutions, Mile 12, Lagos. Ask about installation.' },
+    items: [
+      item('ultra-hd-cctv-cameras', 'Ultra HD CCTV Cameras', 'High-definition surveillance cameras.'),
+      item('dome-cameras', 'Dome Cameras', 'Discreet indoor and outdoor cameras.'),
+      item('bullet-cameras', 'Bullet Cameras', 'Outdoor-ready camera units.'),
+      item('dvr-nvr', 'DVR / NVR Recorders', 'Recording units for camera systems.'),
+      item('cctv-accessories', 'CCTV Accessories', 'Power supplies, connectors and mounts.'),
+      item('security-equipment', 'Other Security Equipment', 'Additional security products.'),
+    ] },
+];
+
+export const SERVICE_CATEGORIES = [
+  { slug: 'laptop-computer-repairs', name: 'Laptop & Computer Repairs', folder: 'laptop-repair', enquiry: 'Laptop / Desktop Repair',
+    intro: 'Diagnosis and repair for laptops and desktop computers.',
+    seo: { title: 'Laptop & Computer Repairs in Mile 12, Lagos', desc: 'Laptop and desktop repairs, diagnosis, screen, battery and keyboard replacement at SoTech IT Solutions, Mile 12, Kosofe, Lagos.' },
+    items: [
+      item('laptop-repair', 'Laptop Repairs', 'Hardware diagnosis and repair.'),
+      item('desktop-repair', 'Desktop Computer Repairs', 'Troubleshooting and repair.'),
+      item('motherboard-repair', 'Motherboard-Related Repairs', 'Faults traced and fixed where possible.'),
+      item('laptop-screen-replacement', 'Laptop Screen Replacement', 'Cracked or faulty display replacement.'),
+      item('battery-replacement', 'Battery Replacement', 'New batteries fitted.'),
+      item('keyboard-replacement', 'Keyboard Replacement', 'Faulty keyboards replaced.'),
+    ] },
+  { slug: 'phone-repairs', name: 'Phone Repairs', folder: 'phone-repair', enquiry: 'Phone Repair',
+    intro: 'Phone diagnosis, component replacement and accessory fitting.',
+    seo: { title: 'Phone Repair Services in Kosofe, Lagos', desc: 'Mobile phone repairs and component replacement at SoTech IT Solutions, Mile 12, Kosofe, Lagos.' },
+    items: [
+      item('phone-screen-repair', 'Phone Screen Replacement', 'Broken screens replaced.'),
+      item('phone-battery-replacement', 'Phone Battery Replacement', 'Battery fitting.'),
+      item('charging-port-repair', 'Charging Port Repair', 'Charging problems checked.'),
+      item('phone-component-replacement', 'Component Replacement', 'Replacement of faulty phone parts.'),
+      item('phone-diagnosis', 'Phone Diagnosis', 'Find the fault before repair.'),
+      item('phone-protection-fitting', 'Protector Fitting', 'Screen protector and case fitting.'),
+    ] },
+  { slug: 'software-os-installation', name: 'Software & OS Installation', folder: 'software-installation', enquiry: 'Software / OS Installation',
+    intro: 'Operating systems, Office, applications and drivers set up properly.',
+    seo: { title: 'Windows & Microsoft Office Installation in Lagos', desc: 'Windows installation, Microsoft Office, software and driver installation at SoTech IT Solutions, Mile 12, Lagos.' },
+    items: [
+      item('windows-installation', 'Windows Installation', 'Clean OS installation.'),
+      item('os-upgrades', 'Operating System Upgrades', 'Move to a newer version.'),
+      item('microsoft-office', 'Microsoft Office Installation', 'Office set up and configured.'),
+      item('software-installation', 'Software & Application Installation', 'Installation and configuration.'),
+      item('driver-installation', 'Driver Installation', 'Drivers so hardware works properly.'),
+      item('computer-formatting', 'Computer Formatting', 'Fresh start for slow or faulty systems.'),
+    ] },
+  { slug: 'hardware-upgrades-maintenance', name: 'Hardware Upgrades & Maintenance', folder: 'hardware-upgrades', enquiry: 'Hardware Upgrade / Maintenance',
+    intro: 'Upgrades, servicing and preventive maintenance to keep computers running well.',
+    seo: { title: 'SSD & RAM Upgrades and Computer Maintenance in Lagos', desc: 'SSD installation, RAM upgrades, virus troubleshooting and preventive maintenance at SoTech IT Solutions, Mile 12, Lagos.' },
+    items: [
+      item('ssd-upgrade', 'SSD Installation & Upgrades', 'Faster startup and load times.'),
+      item('ram-upgrade', 'RAM Upgrades', 'More memory for multitasking.'),
+      item('preventive-maintenance', 'Preventive Maintenance', 'Cleaning and checks.'),
+      item('virus-malware-removal', 'Virus & Malware Troubleshooting', 'Clean up infected systems.'),
+      item('system-optimization', 'System Optimization', 'Speed up slow computers.'),
+      item('technical-support', 'Technical Support', 'General IT help.'),
+    ] },
+  { slug: 'cctv-installation', name: 'CCTV Installation', folder: 'cctv-installation', enquiry: 'CCTV Installation',
+    intro: 'Supply, installation and configuration of CCTV systems.',
+    seo: { title: 'CCTV Camera Installation in Lagos', desc: 'CCTV installation, camera configuration and technical support from SoTech IT Solutions, Mile 12, Lagos.' },
+    items: [
+      item('cctv-installation', 'CCTV Installation', 'Professional camera installation.'),
+      item('camera-configuration', 'Camera Configuration', 'Recorders and remote viewing set up.'),
+      item('security-camera-systems', 'Security Camera Systems', 'Complete multi-camera systems.'),
+      item('cctv-accessories-fitting', 'CCTV Accessories', 'Mounts, connectors and power.'),
+      item('cctv-technical-support', 'CCTV Technical Support', 'Fault finding and support.'),
+      item('cctv-upgrades', 'System Upgrades', 'Upgrade older camera setups.'),
+    ] },
+];
+
+export const DIGITAL = { slug: 'web-digital-solutions', name: 'Web & Digital Solutions', folder: 'website-development', enquiry: 'Website / Digital Solutions',
+  intro: 'Websites, domains, business email and digital tools for entrepreneurs, startups, small businesses and organisations.',
+  items: [
+    item('website-design', 'Website Design', 'Clean, responsive business websites.'),
+    item('website-development', 'Website Development', 'Custom-built sites.'),
+    item('website-maintenance', 'Website Maintenance & Management', 'Updates and ongoing care.'),
+    item('domain-registration', 'Domain Registration & Transfers', 'Get and move your domain.'),
+    item('business-email', 'Business Email Setup', 'Professional email on your domain.'),
+    item('email-marketing', 'Email Marketing', 'Reach customers by email.'),
+  ] };
+
+export const ACADEMY = { slug: 'coding-academy', name: 'Coding & Design Academy', folder: 'coding-classes', enquiry: 'Coding Academy Enrolment',
+  intro: 'Technology education for children aged 6–16.',
+  items: [
+    item('coding-classes', 'Coding Classes', 'Hands-on programming for kids.'),
+    item('beginner-programming', 'Beginner Programming', 'First steps in coding.'),
+    item('computer-literacy', 'Computer Literacy', 'Confident everyday computer use.'),
+    item('intro-web-development', 'Intro to Web Development', 'Build a first web page.'),
+    item('creative-design', 'Creative Design Classes', 'Digital design basics.'),
+    item('digital-skills', 'Digital Skills Training', 'Practical skills for the future.'),
+  ] };
+
+// Turn a catalog item into a full record that doubles as an image-manifest entry.
+export const withImage = (group, kind, it) => ({
+  id: `${kind}/${group.folder}/${it.slug}`,
+  ...it,
+  category: group.name,
+  image: { key: `${kind}/${group.folder}/${it.slug}.jpg`, alt: it.name, description: it.desc },
+  enquiry: group.enquiry || `Product enquiry: ${it.name}`,
+});
+export const productItems = (c) => c.items.map((i) => withImage(c, 'products', i));
+export const serviceItems = (c, kind = 'services') => c.items.map((i) => withImage(c, kind, i));
+export const digitalItems = () => serviceItems(DIGITAL, 'digital-solutions');
+export const academyItems = () => serviceItems(ACADEMY, 'coding-academy');
