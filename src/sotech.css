@@ -136,3 +136,6 @@ p{margin-bottom:1rem;font-size:1rem}
 .st-wrap,.st-section,.st-two>*,.st-section-head>*{min-width:0;max-width:100%}
 img{max-width:100%;height:auto}
 html,body{max-width:100%;overflow-x:clip}
+.st-carousel,.st-track,.st-card{position:relative}
+.st-carousel{overflow:hidden;contain:paint}
+.st-section{overflow-x:clip}
