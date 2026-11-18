@@ -140,3 +140,6 @@ html,body{max-width:100%;overflow-x:clip}
 .st-carousel,.st-track,.st-card{position:relative}
 .st-carousel{overflow:hidden;contain:paint}
 .st-section{overflow-x:clip}
+.st-footer ul{padding:0;margin:.6rem 0 0}
+.st-footer h2{margin:0}
+.st-footer nav,.st-footer address{padding:0;margin-left:0}
