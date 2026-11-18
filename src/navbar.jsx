@@ -51,7 +51,17 @@ export default function Navbar() {
               <li><NavLink to="/web-digital-solutions" className="st-navlink">Web &amp; Digital Solutions</NavLink></li>
               <li><NavLink to="/coding-academy" className="st-navlink">Coding Academy</NavLink></li>
               <li><NavLink to="/store" className="st-navlink">Our Store</NavLink></li>
-              <li><NavLink to="/contact" className="st-btn st-btn-small">Contact Us</NavLink></li>
+              {/* <li><NavLink to="/contact" className="st-btn st-btn-small">Contact Us</NavLink></li> */}
+              <li>
+  <a 
+    href="https://wa.me/2348108594858?text=Hello%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20services." 
+    className="st-btn st-btn-small" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    Contact Us
+  </a>
+</li>
             </ul>
           </nav>
         </div>
