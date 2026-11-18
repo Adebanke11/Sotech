@@ -60,7 +60,7 @@ function Theapp() {
       </div></section>
 
       <section className="st-section st-alt" aria-labelledby="div-h"><div className="st-wrap">
-        <h2 id="div-h"> do</h2>
+        <h2 id="div-h" style={{textAlign:'center'}}> Everything We Do</h2>
         <ul className="st-divisions">
           {DIVISIONS.map(([t, d, to]) => (
             <li key={t}><Link to={to}><h3>{t}</h3><p>{d}</p></Link></li>
