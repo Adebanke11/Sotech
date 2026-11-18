@@ -184,5 +184,17 @@ export const withImage = (group, kind, it) => ({
 });
 export const productItems = (c) => c.items.map((i) => withImage(c, 'products', i));
 export const serviceItems = (c, kind = 'services') => c.items.map((i) => withImage(c, kind, i));
-export const digitalItems = () => serviceItems(DIGITAL, 'digital-solutions');
-export const academyItems = () => serviceItems(ACADEMY, 'coding-academy');
+// Digital Solutions and Coding Academy use flat image paths (no subfolder):
+// digital-solutions/<slug>  and  coding-academy/<slug>
+const flatItems = (group, kind) =>
+  group.items.map((it) => {
+    const full = withImage(group, kind, it);
+    return {
+      ...full,
+      id: `${kind}/${it.slug}`,
+      image: { ...full.image, key: `${kind}/${it.slug}` },
+    };
+  });
+
+export const digitalItems = () => flatItems(DIGITAL, 'digital-solutions');
+export const academyItems = () => flatItems(ACADEMY, 'coding-academy');
