@@ -4,7 +4,7 @@ import Seo from '../components/Seo';
 import ResponsiveImage from '../components/ResponsiveImage';
 import { breadcrumbs, localBusiness } from '../lib/schema';
 import { PRODUCT_CATEGORIES } from '../data/catalog';
-import { SITE, addressText, mapsUrl, waLink } from '../data/site';
+import { SITE, addressText, mapsUrl, waLink, WHATSAPP_ENQUIRY, waTo } from '../data/site';
 
 export default function StorePage() {
   const trail = [{ name: 'Home', path: '/' }, { name: 'Our Store', path: '/store' }];
@@ -28,7 +28,14 @@ export default function StorePage() {
           </ul>
           <div className="st-actions">
             <a className="st-btn" href={mapsUrl()} target="_blank" rel="noopener noreferrer">Get directions<span className="visually-hidden"> on Google Maps (opens in a new tab)</span></a>
-            <Link className="st-btn st-btn-ghost" to="/contact?service=Store%20visit">Plan your visit</Link>
+           <a
+  className="st-btn st-btn-ghost"
+  href={waTo(WHATSAPP_ENQUIRY, 'Hello SoTech IT Solutions, I plan to visit your store at Mile 12. Please confirm that you are open and that the item I need is available.')}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Plan your visit<span className="visually-hidden"> on WhatsApp (opens in a new tab)</span>
+</a>
           </div>
           <p className="st-note">Please call or message us to confirm availability before you travel.</p>
         </div>
