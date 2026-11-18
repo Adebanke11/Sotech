@@ -25,3 +25,8 @@ export const mapsUrl = () =>
   `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addressText())}`;
 export const waLink = (text = 'Hi SoTech, I have an enquiry.') =>
   `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(text)}`;
+
+export const WHATSAPP_ENQUIRY = '2348108594858';   // 0810 859 4858
+export const WHATSAPP_ACADEMY = '2347017466460';   // 0701 746 6460
+export const waTo = (number, text) =>
+  `https://wa.me/${number}?text=${encodeURIComponent(text)}`;

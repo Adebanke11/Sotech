@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { WHATSAPP_ENQUIRY, waTo } from '../data/site';
 import { PRODUCT_CATEGORIES, SERVICE_CATEGORIES, productItems, serviceItems } from '../data/catalog';
 import CategoryCarousel from '../components/CategoryCarousel';
 import PageHero from '../components/PageHero';
@@ -22,7 +22,18 @@ export default function IndexPage({ kind }) {
         <CategoryCarousel key={c.slug} title={c.name} intro={c.intro} to={`${path}/${c.slug}`}
           items={isProduct ? productItems(c) : serviceItems(c)} headingLevel={2} />
       ))}
-      <div className="st-wrap st-center"><Link className="st-btn" to="/contact">Ask about a product or service</Link></div>
+     <div className="st-wrap st-center">
+  <a
+    className="st-btn"
+    href={waTo(WHATSAPP_ENQUIRY, isProduct
+      ? 'Hello SoTech IT Solutions, I would like to ask about a product.'
+      : 'Hello SoTech IT Solutions, I would like to ask about a service.')}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Ask about a product or service<span className="visually-hidden"> on WhatsApp (opens in a new tab)</span>
+  </a>
+</div>
     </>
   );
 }
