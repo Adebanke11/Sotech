@@ -38,7 +38,7 @@ p{margin-bottom:1rem;font-size:1rem}
 .st-header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid var(--line)}
 .st-headbar{display:flex;align-items:center;justify-content:space-between;padding:.4rem 0;gap:1rem}
 .st-logo img{display:block;width:100px;height:auto}
-.st-burger{display:none;min-width:44px;min-height:44px;font-size:1.5rem;background:none;border:2px solid var(--navy);border-radius:8px;color:var(--navy)}
+.st-burger{display:none;min-width:44px;min-height:44px;font-size:1.5rem;background:none;border:none;color:var(--navy)}
 .st-nav ul{display:flex;align-items:center;gap:.25rem;list-style:none}
 .st-navlink{display:inline-block;padding:.6rem .7rem;color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
 .st-navlink:hover,.st-navlink.active{color:var(--cyan-dark)}
@@ -140,6 +140,3 @@ html,body{max-width:100%;overflow-x:clip}
 .st-carousel,.st-track,.st-card{position:relative}
 .st-carousel{overflow:hidden;contain:paint}
 .st-section{overflow-x:clip}
-.st-footer ul{padding:0;margin:.6rem 0 0}
-.st-footer h2{margin:0}
-.st-footer nav,.st-footer address{padding:0;margin-left:0}
