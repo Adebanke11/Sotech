@@ -94,7 +94,7 @@ function Theapp() {
       </div></section>
 
       <section className="st-section" aria-labelledby="why-h"><div className="st-wrap">
-        <h2 id="why-h">Why choose SoTech</h2>
+        <h2 id="why-h" style={{textAlign:'center'}}>Why choose SoTech</h2>
         <ul className="st-why">
           <li><strong>One place for everything</strong> Buy, repair, install and learn with the same team.</li>
           <li><strong>New and UK-used options</strong> Choose what fits your budget.</li>
