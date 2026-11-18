@@ -8,9 +8,12 @@ export default function ItemCard({ item, cta = 'Enquire' }) {
       <div className="st-card-body">
         <h3>{item.name}</h3>
         <p>{item.desc}</p>
-        <Link className="st-btn st-btn-small" to={`/contact?service=${encodeURIComponent(item.enquiry)}&item=${encodeURIComponent(item.name)}`}>
-          {cta}<span className="visually-hidden"> about {item.name}</span>
-        </Link>
+        <Link
+  className="st-btn st-btn-small"
+  to={`${cta === 'Book' ? '/book-service' : '/contact'}?service=${encodeURIComponent(item.enquiry)}&item=${encodeURIComponent(item.name)}`}
+>
+  {cta}<span className="visually-hidden"> about {item.name}</span>
+</Link>
       </div>
     </article>
   );

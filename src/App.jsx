@@ -63,6 +63,7 @@ const CategoryPage = lazy(() => import('./pages/CategoryPage'));
 const DivisionPage = lazy(() => import('./pages/DivisionPage'));
 const StorePage = lazy(() => import('./pages/StorePage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
+const BookPage = lazy(() => import('./pages/BookPage'));
 
 function PageViews() {
   const { pathname, search } = useLocation();
@@ -94,7 +95,7 @@ function App() {
             <Route path="/privacy" element={<PrivacyPolicy />} />
             {/* Preserved legacy URLs */}
             <Route path="/Service" element={<Navigate to="/services" replace />} />
-            <Route path="/book-service" element={<Navigate to="/contact" replace />} />
+            <Route path="/book-service" element={<BookPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Suspense>
